@@ -1,0 +1,23 @@
+source 'https://msmobilecenter.visualstudio.com/SDK/_git/AppCenterSDK-Specs-Private.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'DemoApp' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for DemoApp
+  pod 'AppCenter/Push', '~> 2.1.0'
+  pod 'AppCenter/Crashes', '~> 2.1.0'
+  pod 'AppCenter/Analytics', '~> 2.1.0'
+  pod 'AppCenter/Auth', '~> 2.1.0'
+  pod 'AppCenterReactNativeShared', '~> 2.1.0'
+
+  platform :ios, '9.0'
+
+  # This commented line is to avoid react-native link adding an optional dependency that is way too heavy.
+  # pod 'RNGestureHandler', :path => '../node_modules/react-native-gesture-handler'
+
+end
